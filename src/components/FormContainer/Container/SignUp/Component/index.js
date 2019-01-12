@@ -7,6 +7,9 @@ class SignUp extends Component {
     // console.log('props', this.props);
     return (
       <div>
+        <p onClick={() => this.props.history.push('/')} >
+          Go to Home
+        </p>
         In SignUp Component
         <p onClick={() => this.props.history.push('/login')} >
           Go to Login

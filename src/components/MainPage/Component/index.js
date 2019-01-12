@@ -9,13 +9,15 @@ import Footer from '../../Footer/Component'
 class MainPage extends Component {
 
   render() {
-    console.log('MainPage props:', this.props);
+    // console.log('MainPage props:', this.props);
     return (
       <div>
-        MainPage
-          <div onClick={() => this.props.history.push('/login')} >
-            Login?
-          </div>
+        <div>
+          MainPage
+            <p onClick={() => this.props.history.push('/login')} >
+              Go to Login
+            </p>
+        </div>
           <Landing />
           <About />
           <Apps />

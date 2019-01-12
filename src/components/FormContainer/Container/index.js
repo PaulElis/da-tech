@@ -9,9 +9,8 @@ class FormContainer extends Component {
     // console.log('FormContainer props:', this.props);
     return (
       <div>
-        FormContainer
-          {this.props.location.pathname === '/signup' ? <SignUp {...this.props} changeSignUpState={this.changeSignUpState} />
-            : <Login {...this.props} changeSignUpState={this.changeSignUpState} /> }
+        {this.props.location.pathname === '/signup' ? <SignUp {...this.props} changeSignUpState={this.changeSignUpState} />
+          : <Login {...this.props} changeSignUpState={this.changeSignUpState} /> }
       </div>
     );
   }

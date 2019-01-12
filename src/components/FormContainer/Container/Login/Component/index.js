@@ -3,14 +3,13 @@ import './index.css'
 
 class Login extends Component {
 
-  // renderSignUp = () => {
-  //   this.props.history.push('/signup')
-  // }
-
   render() {
     // console.log('Login props:', this.props);
     return (
       <div>
+        <p onClick={() => this.props.history.push('/')} >
+          Go to Home
+        </p>
           In Login Component
         <p onClick={() => this.props.history.push('/signup')} >
           Go to SignUp
