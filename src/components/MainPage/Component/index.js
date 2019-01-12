@@ -9,7 +9,7 @@ import Footer from '../../Footer/Component'
 class MainPage extends Component {
 
   render() {
-    // console.log('props', this.props);
+    console.log('props', this.props);
     return (
       <div>
         MainPage

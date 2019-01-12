@@ -7,7 +7,7 @@ class FormContainer extends Component {
   state = { signUp: true }
 
   render() {
-    // console.log('props', this.props);
+    console.log('props', this.props);
     return (
       <div>
         FormContainer
