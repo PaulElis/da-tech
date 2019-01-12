@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './index.css'
 
-class Form extends Component {
+class Login extends Component {
 
   render() {
     // console.log('props', this.props);
     return (
-      <div>Form</div>
+      <div>Login</div>
     );
   }
 }
 
-export default Form;
+export default Login;
