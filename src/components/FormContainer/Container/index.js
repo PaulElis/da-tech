@@ -4,14 +4,14 @@ import Login from './Login/Component'
 import SignUp from './SignUp/Component'
 
 class FormContainer extends Component {
-  state = { signUp: true }
 
   render() {
-    console.log('props', this.props);
+    // console.log('FormContainer props:', this.props);
     return (
       <div>
         FormContainer
-        {this.state.signUp ? <SignUp /> : <Login /> }
+          {this.props.location.pathname === '/signup' ? <SignUp {...this.props} changeSignUpState={this.changeSignUpState} />
+            : <Login {...this.props} changeSignUpState={this.changeSignUpState} /> }
       </div>
     );
   }
