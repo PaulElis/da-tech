@@ -4,9 +4,11 @@ import './index.css'
 class Subscribe extends Component {
 
   render() {
-    // console.log('props', this.props);
+    // console.log('Subscribe props:', this.props);
     return (
-      <div>Subscribe</div>
+      <div onClick={() => this.props.subscribe()}>
+        Subscribe
+      </div>
     );
   }
 }

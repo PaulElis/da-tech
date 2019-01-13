@@ -18,11 +18,11 @@ class MainPage extends Component {
               Go to Login
             </p>
         </div>
-          <Landing />
-          <About />
-          <Apps />
-          <Subscribe />
-          <Footer />
+          <Landing {...this.props} />
+          <About {...this.props} />
+          <Apps {...this.props} />
+          <Subscribe {...this.props} />
+          <Footer {...this.props} />
       </div>
     );
   }
