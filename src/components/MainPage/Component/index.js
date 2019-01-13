@@ -12,12 +12,6 @@ class MainPage extends Component {
     // console.log('MainPage props:', this.props);
     return (
       <div>
-        <div>
-          MainPage
-            <p onClick={() => this.props.history.push('/login')} >
-              Go to Login
-            </p>
-        </div>
           <Landing {...this.props} />
           <About {...this.props} />
           <Apps {...this.props} />

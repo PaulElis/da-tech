@@ -6,7 +6,11 @@ class Landing extends Component {
   render() {
     // console.log('props', this.props);
     return (
-      <div>Landing</div>
+      <div id='landing-container'>
+        <p id='landing-login' onClick={() => this.props.history.push('/login')} >
+          Login
+        </p>
+      </div>
     );
   }
 }

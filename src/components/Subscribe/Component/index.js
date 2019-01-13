@@ -6,8 +6,10 @@ class Subscribe extends Component {
   render() {
     // console.log('Subscribe props:', this.props);
     return (
-      <div onClick={() => this.props.subscribe()}>
-        Subscribe
+      <div id='subscribe-container'>
+        <p onClick={() => this.props.subscribe()}>
+          Subscribe
+        </p>
       </div>
     );
   }

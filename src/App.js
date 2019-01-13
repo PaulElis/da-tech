@@ -5,7 +5,7 @@ import FormContainer from './components/FormContainer/Container'
 
 import {Route, withRouter} from 'react-router-dom'
 import { connect } from 'react-redux'
-import { subscribe } from '../src/Actions/actions'
+import { subscribe } from '../src/actions/actions'
 
 class App extends Component {
 
