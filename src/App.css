@@ -11,6 +11,10 @@
   justify-content: center;
 }
 
+.link{
+  cursor: pointer;
+}
+
 h1{
   font-size: 32px;
   font-weight: 600;

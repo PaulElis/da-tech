@@ -7,7 +7,7 @@ class Landing extends Component {
     // console.log('props', this.props);
     return (
       <div id='landing-container'>
-        <p id='landing-login' onClick={() => this.props.history.push('/login')} >
+        <p className='link' id='landing-login' onClick={() => this.props.history.push('/login')} >
           Login
         </p>
       </div>
