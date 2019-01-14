@@ -26,8 +26,11 @@ class Form extends Component {
               <input type="text" name="name" />
               <input type="text" name="name" />
               {this.props.location.pathname === '/signup' ? <input type="text" name="name" /> : null }
-              <input type="submit" value="Submit" />
             </form>
+            <button id='form-button' type="submit" value="Submit">
+            {this.props.location.pathname === '/signup' ? 'SIGN UP' : 'LOGIN' }
+            </button>
+            
           </div>
         </div>
 

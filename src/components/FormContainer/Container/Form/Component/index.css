@@ -25,13 +25,25 @@ div#form-header{
 
 h3#form-headerh3.link + h3#form-headerh3.link{
   margin-left: 21px;
+  margin-bottom: 30px;
 }
 
 h3#form-headerh3{
   margin: 0;
 }
 
+input{
+  height: 52px;
+  margin-bottom: 10px;
+  opacity: 0.3;
+}
+
 form#form-input-submit{
   display: flex;
   flex-direction: column;
+  margin-bottom: 32px;
+}
+
+#form-button{
+  height: 49px;
 }
