@@ -1,8 +1,9 @@
 #landing-container{
   background: url(../../../images/gpc_hero_image@2x.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 87vh;
+  background-position: bottom;
+  height: 100vh;
 }
 
 p#landing-login{
@@ -10,4 +11,17 @@ p#landing-login{
   text-align: right;
   margin: 0;
   padding: 32px 80px 0 0;
+}
+
+div#landing-image-header-container{
+  padding: 230px 0 0 0;
+  color: white;
+}
+
+img#landing-image{
+  padding-bottom: 32px;
+}
+
+h1#landing-header{
+  margin: 0;
 }

@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import './index.css'
+import logo from '../../../images/gpc_logo@2x.png'
 
 class Form extends Component {
 
   render() {
-    // console.log('Form props:', this.props);
     return (
       <div id='formcontainer-container'>
-        <p className='link' id='home-link' onClick={() => this.props.history.push('/')} >
-          Go to Home
-        </p>
+        <img className='link' src={logo} alt='oh no!' onClick={() => this.props.history.push('/')} />
 
         <div id='form-container-upper'>
           <div id='form-container'>
@@ -30,7 +28,7 @@ class Form extends Component {
             <button id='form-button' type="submit" value="Submit">
             {this.props.location.pathname === '/signup' ? 'SIGN UP' : 'LOGIN' }
             </button>
-            
+
           </div>
         </div>
 

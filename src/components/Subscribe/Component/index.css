@@ -1,3 +1,23 @@
 #subscribe-container{
-  padding: 6%;
+}
+
+h2#subscribe-header{
+  margin: 0;
+  padding: 88px 0 45px 0;
+}
+
+div#subscribe-form-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 49px;
+  padding-bottom: 90px;
+}
+
+input#subscribe-form-input{
+  width: 276px;
+}
+
+button#subscribe-form-button{
+  width: 165px;
 }
