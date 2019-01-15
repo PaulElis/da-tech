@@ -19,6 +19,7 @@ div#landing-image-header-container{
 }
 
 img#landing-image{
+  width: 375px;
   padding-bottom: 32px;
 }
 

@@ -10,14 +10,25 @@ div#subscribe-form-container{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 49px;
   padding-bottom: 90px;
 }
 
 input#subscribe-form-input{
-  width: 276px;
+  font-size: 18px;
+  height: 45px;
+  width: 272px;
+  padding: 0;
+  border-color: #ddd;
+  padding-left: 20px;
+}
+
+::placeholder {
+  color: #888;
+  font-weight: 500;
+  opacity: 1;
 }
 
 button#subscribe-form-button{
+  height: 49px;
   width: 165px;
 }

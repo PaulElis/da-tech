@@ -4,10 +4,10 @@
 
 
 
-export function subscribe(){
+export function subscribe(email="test@datechnologies.co"){
   const URL = 'http://dev.datechnologies.co/Tests/scripts/add-email.php'
   var form = new FormData();
-  form.append("email", "test@datechnologies.co");
+  form.append("email", email);
 
   return (dispatch) => {
     return fetch(URL, {
