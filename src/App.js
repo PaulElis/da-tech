@@ -5,7 +5,7 @@ import FormContainer from './components/FormContainer/Container'
 
 import {Route, withRouter} from 'react-router-dom'
 import { connect } from 'react-redux'
-import { subscribe } from '../src/actions/actions'
+import { subscribe, signup, login } from '../src/actions/actions'
 
 class App extends Component {
 
@@ -16,11 +16,11 @@ class App extends Component {
         <header className="App-header">
         </header>
         <Route exact path="/" render={(props) => <MainPage {...props} subscribe={this.props.subscribe}/>} />
-        <Route exact path="/login" component={FormContainer}/>
-        <Route exact path="/signup" component={FormContainer}/>
+        <Route exact path="/login" render={(props) => <FormContainer {...props} signup={this.props.signup} login={this.props.login} />} />
+        <Route exact path="/signup" render={(props) => <FormContainer {...props} signup={this.props.signup} login={this.props.login} />} />
       </div>
     );
   }
 }
 
-export default withRouter(connect(null, { subscribe })(App));
+export default withRouter(connect(null, { subscribe, signup, login })(App));

@@ -1,17 +1,14 @@
 import React, { Component } from 'react';
 import './index.css'
 import logo from '../../../images/gpc_logo@2x.png'
-import username from '../../../images/ic_username@2x.png'
-import email from '../../../images/ic_email@2x.png'
-import password from '../../../images/ic_password@2x.png'
+import Form from './Form'
 
-class Form extends Component {
+class FormComponent extends Component {
 
   render() {
-    // <input id='form-input-email' type="text" name="name" />
-    // <input id='form-input-password' type="text" name="name" />
+    // console.log('FormComponent props;', this.props);
     return (
-      <div id='formcontainer-container'>
+      <div id='formcontainer-component'>
         <div id='formcontainer-home-link'>
           <img className='link' src={logo} alt='oh no!' onClick={() => this.props.history.push('/')} />
         </div>
@@ -31,31 +28,7 @@ class Form extends Component {
               </h3>
             </div>
 
-            <form id='form-input-submit'>
-
-            {this.props.location.pathname === '/signup' ?
-              <div className="input-container">
-                <input className="form-input" type="text" name="name" />
-                <img className="input-image" src={username} />
-                <div className="input-text"> Username </div>
-              </div> : null }
-
-              <div className="input-container">
-                <input className="form-input" type="text" name="name" />
-                <img className="input-image" src={email} />
-                <div className="input-text"> Email </div>
-              </div>
-
-              <div className="input-container">
-                <input className="form-input" type="text" name="name" />
-                <img className="input-image" src={password} />
-                <div className="input-text"> Password </div>
-              </div>
-
-            </form>
-            <button className='link' id='form-button' type="submit" value="Submit">
-              {this.props.location.pathname === '/signup' ? 'SIGN UP' : 'LOGIN' }
-            </button>
+            <Form {...this.props} />
 
           </div>
         </div>
@@ -65,4 +38,4 @@ class Form extends Component {
   }
 }
 
-export default Form;
+export default FormComponent;
