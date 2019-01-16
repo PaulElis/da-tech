@@ -10,7 +10,7 @@ export function subscribe(email="test@datechnologies.co"){
   })
   .then(res => res.json())
     .then(result => {
-      console.log('in subscribe', 'Success!');
+      // console.log('in subscribe');
       dispatch({type: "SHOW_SUCCESS", payload: 'Success!'})
     })
   }

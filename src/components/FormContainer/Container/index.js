@@ -14,7 +14,7 @@ class FormContainer extends Component {
   }
 
   render() {
-    console.log('FormContainer props:', this.props);
+    // console.log('FormContainer props:', this.props);
     return (
       <div id='formcontainer-container'>
         <FormUpper {...this.props} handleFormClick={this.handleFormClick}

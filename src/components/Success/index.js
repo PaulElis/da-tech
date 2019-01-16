@@ -7,13 +7,31 @@ class Success extends Component {
     success: false,
   }
 
+  componentDidUpdate(prevProps) {
+    if (this.props.success !== prevProps.success) {
+      this.setState({ success: 'Success!' })
+    }
+  }
+
+  renderSuccess = () => {
+    console.log('in renderSuccess');
+    setTimeout(this.changeBack, 2000);
+    return <div>Success</div>
+  }
+
+  changeBack = () => {
+    console.log('in changeBack');
+    // document.getElementById('favorites-image').style.backgroundColor='#fff'
+    this.setState({ success: false })
+  }
+
   render() {
-    // console.log('Success props:', this.props);
-    // console.log('Success state:', this.state.success);
+    // console.log('Success props:', this.props.success);
+    console.log('Success state:', this.state.success);
     return (
       <div id='success-container'>
         <div>
-          {this.props.success === 'Success!' ? <div>Success</div> : null}
+          {this.state.success === 'Success!' ? this.renderSuccess() : null}
         </div>
       </div>
     );

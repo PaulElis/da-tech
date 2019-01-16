@@ -10,7 +10,7 @@ import { subscribe, signup, login } from '../src/actions/actions'
 class App extends Component {
 
   render() {
-    console.log('App props:', this.props);
+    // console.log('App props:', this.props);
     return (
       <div className="App">
         <header className="App-header">
