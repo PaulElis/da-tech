@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './index.css'
-import logo from '../../../images/gpc_logo@2x.png'
+import logo from '../../../../images/gpc_logo@2x.png'
 import Form from './Form'
 
-class FormComponent extends Component {
+class FormUpper extends Component {
 
   render() {
-    // console.log('FormComponent props;', this.props);
+    // console.log('FormUpper props;', this.props);
     return (
       <div id='formcontainer-component'>
         <div id='formcontainer-home-link'>
@@ -38,4 +38,4 @@ class FormComponent extends Component {
   }
 }
 
-export default FormComponent;
+export default FormUpper;

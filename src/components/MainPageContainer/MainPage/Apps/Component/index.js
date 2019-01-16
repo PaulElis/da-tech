@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import './index.css'
-import movo from '../../../images/logo_movo@2x.png'
-import conair from '../../../images/logo_conair@2x.png'
-import tappingSolution from '../../../images/logo_tappingSolution@2x.png'
-import goTenna from '../../../images/logo_goTenna@2x.png'
+import movo from '../../../../../images/logo_movo@2x.png'
+import conair from '../../../../../images/logo_conair@2x.png'
+import tappingSolution from '../../../../../images/logo_tappingSolution@2x.png'
+import goTenna from '../../../../../images/logo_goTenna@2x.png'
 
 class Apps extends Component {
 
   render() {
-    // console.log('props', this.props);
     return (
       <div id='apps-container'>
         <h2 id='apps-header'>OUR APPS</h2>
-        <div id='apps-images-container'>
+        <div onClick={() => this.apps()} id='apps-images-container'>
+
           <div className='apps-images-section'>
             <a href='https://movo.me' target="_blank" rel="noopener noreferrer">
               <img className='app-images' src={movo} alt='oh no!' />

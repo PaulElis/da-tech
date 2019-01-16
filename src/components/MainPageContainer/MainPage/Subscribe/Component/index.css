@@ -1,22 +1,20 @@
-#subscribe-container{
-}
-
 h2#subscribe-header{
+  font-size: 24px;
   margin: 0;
-  padding: 88px 0 45px 0;
+  padding: 44px 0 22.5px 0;
 }
 
 div#subscribe-form-container{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-bottom: 90px;
+  padding-bottom: 45px;
 }
 
 input#subscribe-form-input{
   font-size: 18px;
   height: 45px;
-  width: 272px;
+  width: 202px;
   padding: 0;
   border-color: #ddd;
   padding-left: 20px;
@@ -30,5 +28,24 @@ input#subscribe-form-input{
 
 button#subscribe-form-button{
   height: 49px;
+  width: 105px;
+}
+
+@media only screen and (min-width: 576px) {
+div#subscribe-form-container{
+  padding-bottom: 90px;
+}
+
+h2#subscribe-header{
+  font-size: 28px;
+  padding: 88px 0 45px 0;
+}
+
+input#subscribe-form-input{
+  width: 272px;
+}
+
+button#subscribe-form-button{
   width: 165px;
+}
 }

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './index.css'
-import username from '../../../../images/ic_username@2x.png'
-import email from '../../../../images/ic_email@2x.png'
-import password from '../../../../images/ic_password@2x.png'
+import username from '../../../../../images/ic_username@2x.png'
+import email from '../../../../../images/ic_email@2x.png'
+import password from '../../../../../images/ic_password@2x.png'
 
 class Form extends Component {
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './index.css'
-import FormComponent from '../Component'
+import FormUpper from './FormUpper/index.js'
 
 
 class FormContainer extends Component {
@@ -14,10 +14,10 @@ class FormContainer extends Component {
   }
 
   render() {
-    // console.log('FormContainer props:', this.props);
+    console.log('FormContainer props:', this.props);
     return (
       <div id='formcontainer-container'>
-        <FormComponent {...this.props} handleFormClick={this.handleFormClick}
+        <FormUpper {...this.props} handleFormClick={this.handleFormClick}
           changeOpacity={this.changeOpacity} divDisappear={this.divDisappear} />
       </div>
     );

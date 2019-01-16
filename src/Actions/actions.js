@@ -9,7 +9,10 @@ export function subscribe(email="test@datechnologies.co"){
     body: (form)
   })
   .then(res => res.json())
-  .then(console.log)
+    .then(result => {
+      console.log('in subscribe', 'Success!');
+      dispatch({type: "SHOW_SUCCESS", payload: 'Success!'})
+    })
   }
 }
 

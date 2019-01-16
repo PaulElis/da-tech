@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import './index.css'
+import Success from '../../../../Success'
 
 class Subscribe extends Component {
 
-  state = { email: '' }
+  state = {
+    email: '',
+    success: false,
+  }
 
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value })
@@ -27,6 +31,7 @@ class Subscribe extends Component {
             className='link' id='subscribe-form-button' name='email' type="submit" value="Submit">
               SUBSCRIBE
           </button>
+            <Success {...this.props} />
         </div>
       </div>
     );
