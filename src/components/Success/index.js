@@ -21,7 +21,6 @@ class Success extends Component {
 
   changeBack = () => {
     console.log('in changeBack');
-    // document.getElementById('favorites-image').style.backgroundColor='#fff'
     this.setState({ success: false })
   }
 

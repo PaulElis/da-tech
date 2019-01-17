@@ -4,16 +4,32 @@ import './index.css'
 class Subscribe extends Component {
 
   state = {
-    email: '',
-    success: false,
+    email: "test@datechnologies.co",
   }
 
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value })
   }
 
+  handleSubmit = (event) => {
+    event.preventDefault()
+    const arr = ['com', 'co', 'org', 'edu']
+    const email = this.state.email
+    const end = email.split('.').length-1
+
+    if(email.includes('@') && email.includes('.')){
+      for(let address of arr){
+        if(email.split('.')[end] === address){
+          this.props.subscribe(email)
+        }
+      }
+    } else {
+      console.log("Please enter a valid email");
+    }
+  }
+
   render() {
-    // console.log('Subscribe props:', this.props);
+    // console.log('Subscribe state:', this.state);
     return (
       <div id='subscribe-container'>
         <h2 id='subscribe-header'>
@@ -21,15 +37,14 @@ class Subscribe extends Component {
         </h2>
 
         <div id='subscribe-form-container'>
-          <form>
+          <form onSubmit={(event) => this.handleSubmit(event)} >
             <input onChange={this.handleChange} name='email'
               placeholder='Your email' id='subscribe-form-input' type="text" />
-          </form>
-          <button
-            onClick={() => this.props.subscribe()}
-            className='link' id='subscribe-form-button' name='email' type="submit" value="Submit">
+            <button className='link' id='subscribe-form-button'
+              name='email' type="submit" value="Submit">
               SUBSCRIBE
-          </button>
+            </button>
+          </form>
         </div>
       </div>
     );
