@@ -9,9 +9,9 @@ class Form extends Component {
   state = {
     username: '',
     usernameDisplay: true,
-    email: "test@datechnologies.co",
+    email: "",
     emailDisplay: true,
-    password: 'Test123',
+    password: '',
     passwordDisplay: true,
   }
 
@@ -27,14 +27,15 @@ class Form extends Component {
     const password = this.state.password
     const end = email.split('.').length-1
 
-    if(email.includes('@') && email.includes('.')){
+    // if(email.includes('@') && email.includes('.')){
+    if(this.props.location.pathname === '/signup' && email.includes('@') && email.includes('.')){
       for(let address of arr){
-        if(this.props.location.pathname === '/signup' && email.split('.')[end] === address){
+        if(email.split('.')[end] === address){
           return this.props.signup(username, email, password)
-        } else if (this.props.location.pathname === '/login' && email.split('.')[end] === address) {
-          return this.props.login()
         }
       }
+    } else if (this.props.location.pathname === '/login') {
+      return this.props.login()
     } else {
       console.log("Please enter a valid email");
     }
