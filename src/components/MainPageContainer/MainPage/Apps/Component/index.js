@@ -11,7 +11,7 @@ class Apps extends Component {
     return (
       <div id='apps-container'>
         <h2 id='apps-header'>OUR APPS</h2>
-        <div onClick={() => this.apps()} id='apps-images-container'>
+        <div id='apps-images-container'>
 
           <div className='apps-images-section'>
             <a href='https://movo.me' target="_blank" rel="noopener noreferrer">
